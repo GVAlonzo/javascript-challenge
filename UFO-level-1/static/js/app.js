@@ -1,3 +1,11 @@
+// ************************************************************
+// *  JavaScript Homework - JavaScript and DOM Manipulation
+// *
+// *    Author: George Alonzo
+// *  Due Date: December 11, 2021
+// *
+// ************************************************************
+
 // console.log("app.js loaded");
 
 // from data.js
@@ -55,7 +63,10 @@ function runEnter() {
     displayTable(filteredData);
 };
 
+// Reset function to clear input field(s) and reload original,
+//   unfiltered data
 function runReset(){
+    d3.select("#datetime").node().value = "";
     tbody.html("");
     displayTable(tableData);
 };
